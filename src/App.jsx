@@ -18,7 +18,7 @@ export default function App() {
   return (
     <Router> 
       <ScrollToTop />
-      <div className="bg-slate-50 min-h-screen font-sans selection:bg-teal-100">
+      <div className="bg-neutral-100 min-h-screen font-sans selection:bg-cyan-100">
         {/* Global Navigation - Always Visible */}
         <Navbar />
         
@@ -28,7 +28,7 @@ export default function App() {
             <>
               <Hero />
               <section id="real-cases" className="max-w-7xl mx-auto py-24 px-6 text-center">
-                <h2 className="text-3xl font-bold mb-16 text-slate-800 tracking-tight">
+                <h2 className="text-3xl font-bold mb-16 text-neutral-800 tracking-tight">
                   GLOBAL POLLUTION CASES
                 </h2>
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
@@ -38,6 +38,7 @@ export default function App() {
                 </div>
               </section>
               <Transition />
+              <TakeAction />
             </>
           } />
 
@@ -46,11 +47,10 @@ export default function App() {
           <Route path="/consequences" element={<ConsequencesPage />} />
           <Route path="/beach/:id" element={<BeachDetail />} />
           <Route path="/protection" element={<ProtectionPage />} />
-          <Route path="/take-action" element={<TakeAction />} />
         </Routes>
 
         {/* Global Footer */}
-        <footer className="bg-slate-900 text-white py-12 text-center text-sm">
+        <footer className="bg-cyan-950 text-white py-12 text-center text-sm">
           <p>© 2026 BeachHero</p>
         </footer>
       </div>

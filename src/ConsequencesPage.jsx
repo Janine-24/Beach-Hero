@@ -41,14 +41,14 @@ const consequencesData = [
 // ==========================================
 function ConsequenceItem({ title, description, example }) {
   return (
-    <div className="flex gap-6 flex-col md:flex-row border-b border-slate-100 last:border-0 pb-8 last:pb-0">
+    <div className="flex gap-6 flex-col md:flex-row border-b border-neutral-200 last:border-0 pb-8 last:pb-0">
       <div className="flex-1">
-        <h2 className="text-2xl font-bold text-teal-800 mb-3">{title}</h2>
-        <p className="text-slate-600 mb-4 leading-relaxed">
+        <h2 className="text-2xl font-bold text-cyan-900 mb-3">{title}</h2>
+        <p className="text-neutral-600 mb-4 leading-relaxed">
           {description}
         </p>
-        <div className="bg-rose-50 border-l-4 border-rose-400 p-4 rounded-r-lg">
-          <p className="text-sm text-rose-800 font-medium">
+        <div className="bg-orange-50 border-l-4 border-orange-400 p-4 rounded-r-lg">
+          <p className="text-sm text-orange-900 font-medium">
             <span className="font-bold">Real World Example:</span> {example}
           </p>
         </div>
@@ -62,10 +62,10 @@ function ConsequenceItem({ title, description, example }) {
 // ==========================================
 export default function ConsequencesPage() {
   return (
-    <div className="min-h-screen bg-white font-sans text-slate-800">
+    <div className="min-h-screen bg-neutral-50 font-sans text-neutral-800">
       
       {/* HERO HEADER SECTION */}
-      <div className="bg-[#002B49] text-white pt-24 pb-16 px-6">
+      <div className="bg-cyan-950 text-white pt-24 pb-16 px-6">
         <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           
           {/* Hero Image */}
@@ -79,7 +79,7 @@ export default function ConsequencesPage() {
 
           {/* Header Text */}
           <div className="space-y-6">
-            <span className="inline-block px-4 py-1 bg-white/20 rounded-full text-sm font-semibold tracking-wide backdrop-blur-sm">
+            <span className="inline-block px-4 py-1 bg-white/30 rounded-full text-sm font-semibold tracking-wide backdrop-blur-sm">
               Conservation
             </span>
             
@@ -88,7 +88,7 @@ export default function ConsequencesPage() {
               Why We Must Act Now
             </h1>
             
-            <p className="text-lg text-slate-300 leading-relaxed">
+            <p className="text-lg text-neutral-300 leading-relaxed">
               Beaches are a key part of the ocean ecosystem. Here are the critical problems faced by our coastlines and why it matters to you.
             </p>
 
@@ -104,16 +104,16 @@ export default function ConsequencesPage() {
           <div className="lg:col-span-2 space-y-12">
             
             {/* Intro */}
-            <div className="prose prose-lg text-slate-600">
+            <div className="prose prose-lg text-neutral-600">
               <p className="text-xl leading-relaxed mb-6">
-                <span className="font-bold text-slate-900">Beaches are essential natural features</span>, comprising distinct zones such as the backshore, foreshore, and shoreface. They serve vital roles in coastal disaster defense, habitat provision, and tourism.
+                <span className="font-bold text-neutral-900">Beaches are essential natural features</span>, comprising distinct zones such as the backshore, foreshore, and shoreface. They serve vital roles in coastal disaster defense, habitat provision, and tourism.
               </p>
               <p className="text-lg leading-relaxed mb-8">
                 Despite their significance, many coastal nations prioritize beach preservation. However, pollution not only spoils the natural beauty but creates specific, dangerous consequences.
               </p>
             </div>
 
-            <hr className="border-slate-200" />
+            <hr className="border-neutral-200" />
 
             {/* LOOP THROUGH DATA TO RENDER ITEMS */}
             <div className="flex flex-col gap-10">
@@ -134,14 +134,14 @@ export default function ConsequencesPage() {
             <div className="sticky top-24 space-y-8">
               
               {/* About Widget */}
-              <div className="bg-slate-50 p-6 rounded-2xl border border-slate-100">
-                <h3 className="text-lg font-bold text-slate-800 mb-4 border-b pb-2">About Ocean Info</h3>
+              <div className="bg-white p-6 rounded-2xl border border-neutral-200">
+                <h3 className="text-lg font-bold text-neutral-800 mb-4 border-b pb-2">About Ocean Info</h3>
                 <img 
                   src="https://wallpaperaccess.com/full/218482.jpg" 
                   alt="Coral Reef" 
                   className="w-full h-40 object-cover rounded-xl mb-4"
                 />
-                <p className="text-sm text-slate-600 leading-relaxed mb-4">
+                <p className="text-sm text-neutral-600 leading-relaxed mb-4">
                   At Ocean Info, we dive deep into ocean-related topics such as sealife, exploration of the sea, rivers, and geographical importance.
                 </p>
               </div>

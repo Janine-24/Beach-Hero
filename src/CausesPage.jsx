@@ -41,15 +41,15 @@ const causesData = [
 // ==========================================
 function CauseItem({ title, description, example }) {
   return (
-    <div className="flex gap-6 flex-col md:flex-row border-b border-slate-100 last:border-0 pb-8 last:pb-0">
+    <div className="flex gap-6 flex-col md:flex-row border-b border-neutral-200 last:border-0 pb-8 last:pb-0">
       <div className="flex-1">
-        <h2 className="text-2xl font-bold text-teal-800 mb-3">{title}</h2>
-        <p className="text-slate-600 mb-4 leading-relaxed">
+        <h2 className="text-2xl font-bold text-cyan-900 mb-3">{title}</h2>
+        <p className="text-neutral-600 mb-4 leading-relaxed">
           {description}
         </p>
         {/* Changed style to Amber (Orange) to distinguish from Red Consequences */}
-        <div className="bg-amber-50 border-l-4 border-amber-400 p-4 rounded-r-lg">
-          <p className="text-sm text-amber-900 font-medium">
+        <div className="bg-orange-50 border-l-4 border-orange-400 p-4 rounded-r-lg">
+          <p className="text-sm text-orange-900 font-medium">
             <span className="font-bold">Real World Example:</span> {example}
           </p>
         </div>
@@ -63,12 +63,12 @@ function CauseItem({ title, description, example }) {
 // ==========================================
 export default function CausesPage() {
   return (
-    <div className="min-h-screen bg-white font-sans text-slate-800">
+    <div className="min-h-screen bg-neutral-50 font-sans text-neutral-800">
       
       {/* ==========================
           SECTION 1: HERO HEADER 
       ========================== */}
-      <div className="bg-[#002B49] text-white pt-24 pb-16 px-6">
+      <div className="bg-cyan-950 text-white pt-24 pb-16 px-6">
         <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           
           {/* LEFT: Hero Image */}
@@ -83,7 +83,7 @@ export default function CausesPage() {
 
           {/* RIGHT: Header Text */}
           <div className="space-y-6">
-            <span className="inline-block px-4 py-1 bg-white/20 rounded-full text-sm font-semibold tracking-wide backdrop-blur-sm">
+            <span className="inline-block px-4 py-1 bg-white/30 rounded-full text-sm font-semibold tracking-wide backdrop-blur-sm">
               Awareness
             </span>
             
@@ -92,7 +92,7 @@ export default function CausesPage() {
               Where Does It Come From?
             </h1>
             
-            <p className="text-lg text-slate-300 leading-relaxed">
+            <p className="text-lg text-neutral-300 leading-relaxed">
               Human activities and negligence are the root of beach pollution. Understanding these sources is the first step toward a cleaner future.
             </p>
 
@@ -111,16 +111,16 @@ export default function CausesPage() {
           <div className="lg:col-span-2 space-y-12">
             
             {/* Intro Paragraphs */}
-            <div className="prose prose-lg text-slate-600">
+            <div className="prose prose-lg text-neutral-600">
               <p className="text-xl leading-relaxed mb-6">
-                <span className="font-bold text-slate-900">Beaches are natural treasures</span> that provide recreation, support marine life, and boost local economies. However, human activities and environmental negligence have led to increasing beach pollution.
+                <span className="font-bold text-neutral-900">Beaches are natural treasures</span> that provide recreation, support marine life, and boost local economies. However, human activities and environmental negligence have led to increasing beach pollution.
               </p>
               <p className="text-lg leading-relaxed mb-8">
                 This pollution comes from various sources that not only harm marine ecosystems but also affect communities that rely on clean beaches. Below are the primary culprits.
               </p>
             </div>
 
-            <hr className="border-slate-200" />
+            <hr className="border-neutral-200" />
 
             {/* LOOP THROUGH DATA TO RENDER ITEMS */}
             <div className="flex flex-col gap-10">
@@ -141,15 +141,15 @@ export default function CausesPage() {
             <div className="sticky top-24 space-y-8">
               
               {/* About Widget */}
-              <div className="bg-slate-50 p-6 rounded-2xl border border-slate-100">
-                <h3 className="text-lg font-bold text-slate-800 mb-4 border-b pb-2">Did You Know?</h3>
+              <div className="bg-white p-6 rounded-2xl border border-neutral-200">
+                <h3 className="text-lg font-bold text-neutral-800 mb-4 border-b pb-2">Did You Know?</h3>
                  {/* ▼▼▼ SIDEBAR IMAGE ▼▼▼ */}
                 <img 
                   src="https://nationaltoday.com/wp-content/uploads/2021/05/Turtle-1.jpg" 
                   alt="Turtle" 
                   className="w-full h-40 object-cover rounded-xl mb-4"
                 />
-                <p className="text-sm text-slate-600 leading-relaxed mb-4">
+                <p className="text-sm text-neutral-600 leading-relaxed mb-4">
                   Over 80% of marine pollution comes from land-based activities. Small changes in our daily lives can prevent debris from ever reaching the ocean.
                 </p>
               </div>

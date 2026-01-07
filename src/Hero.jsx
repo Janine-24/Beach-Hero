@@ -12,7 +12,7 @@ export default function Hero() {
   }, []);
 
   return (
-    <section className="flex flex-col md:flex-row h-screen pt-16">
+    <section className="flex flex-col md:flex-row h-screen">
       {/* left side: OUR VISION */}
       <div className="relative w-full md:w-1/2 h-full overflow-hidden group">
         <img
@@ -20,7 +20,7 @@ export default function Hero() {
           className="w-full h-full object-cover transition duration-700 group-hover:scale-105"
           alt="Vision"
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent flex flex-col justify-center items-center text-white p-6 text-center">
+        <div className="absolute inset-0 bg-gradient-to-t from-cyan-900/50 to-transparent flex flex-col justify-center items-center text-white p-6 text-center">
           <div className={`transform transition-all ease-in-out duration-1000 ${isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
             <h2 className="text-5xl font-bold mb-4 drop-shadow-lg">{SITE_DATA.hero.vision.title}</h2>
             <p className="text-xl mb-8 opacity-90 max-w-md">{SITE_DATA.hero.vision.subtitle}</p>
@@ -35,7 +35,7 @@ export default function Hero() {
           className="w-full h-full object-cover grayscale-[20%] transition duration-700 group-hover:scale-105"
           alt="Reality"
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex flex-col justify-center items-center text-white p-6 text-center">
+        <div className="absolute inset-0 bg-gradient-to-t from-orange-900/60 to-transparent flex flex-col justify-center items-center text-white p-6 text-center">
           <div className={`transform transition-all ease-in-out duration-1000 delay-300 ${isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
             <h2 className="text-5xl font-bold mb-4 drop-shadow-lg">{SITE_DATA.hero.reality.title}</h2>
             <p className="text-xl mb-8 opacity-90 max-w-md">{SITE_DATA.hero.reality.subtitle}</p>
